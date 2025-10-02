@@ -9,7 +9,8 @@ project "fastgltf"
    
     includedirs 
     {
-        "include"
+        "include",
+        "simdjson/include"
     }
 
 	files
@@ -17,6 +18,11 @@ project "fastgltf"
         "include/**.hpp",
         "src/**.cpp"
 	}
+
+    links
+    {
+        "simdjson"
+    }
 
 	optimize "Speed"
 	floatingpoint "Fast"
@@ -28,3 +34,4 @@ project "fastgltf"
     filter {"configurations:Release"}
         runtime "Release"
 
+    include "simdjson"
