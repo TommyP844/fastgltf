@@ -23,7 +23,6 @@ cmake-build-*/
 **/.DS_Store
 
 # Dependencies
-simdjson/
 deps/
 
 # Test files
@@ -53,3 +52,8 @@ docs/xml/
 docs/Doxyfile
 docs/conf.py
 docs/.venv/
+
+
+#Fork
+*.vcxproj
+*.vcxproj.filters
