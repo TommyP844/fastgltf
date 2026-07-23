@@ -57,3 +57,4 @@ docs/.venv/
 #Fork
 *.vcxproj
 *.vcxproj.filters
+*.vcxproj.*

@@ -24,14 +24,13 @@ project "fastgltf"
         "simdjson"
     }
 
-	optimize "Speed"
-	floatingpoint "Fast"
-	intrinsics "On"
-
     filter { "configurations:Debug" }
         runtime "Debug"
 
     filter {"configurations:Release"}
         runtime "Release"
+        optimize "Speed"
+	    floatingpoint "Fast"
+	    intrinsics "On"
 
     include "simdjson"
